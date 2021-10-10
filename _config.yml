@@ -5,6 +5,7 @@ description: >-
 baseurl: "/about"
 url: "https://bryant-finney.github.io"
 github_username: bryant-finney
+show_downloads: true
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
