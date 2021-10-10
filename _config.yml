@@ -1,1 +1,25 @@
+title: Bryant Finney
+description: >-
+  This site contains my technical thoughts, passions, and history.
+
+baseurl: "/about" # the subpath of your site, e.g. /blog
+url: "https://bryant-finney.github.io"
+github_username: bryant-finney
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 theme: jekyll-theme-minimal
