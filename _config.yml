@@ -2,7 +2,7 @@ title: Bryant Finney
 description: >-
   This site contains my technical thoughts, passions, and history.
 
-baseurl: "/about" # the subpath of your site, e.g. /blog
+baseurl: "/about"
 url: "https://bryant-finney.github.io"
 github_username: bryant-finney
 
