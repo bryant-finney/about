@@ -7,8 +7,10 @@ url: "https://bryant-finney.github.io"
 github_username: bryant-finney
 
 # Build settings
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 exclude:
   - .sass-cache/
