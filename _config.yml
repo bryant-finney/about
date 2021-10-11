@@ -42,7 +42,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-minimal
 
 defaults:
   - scope:
