@@ -17,6 +17,9 @@ author:
     - label: GitHub
       icon: fab fa-github
       url: https://github.com/bryant-finney
+    - label: GitLab
+      icon: fab fa-gitlab
+      url: https://gitlab.com/bryant.finney
     - label: "Twitter"
       icon: fab fa-fw fa-twitter-square
       url: https://twitter.com/bryant_witha_T
