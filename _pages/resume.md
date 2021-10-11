@@ -10,7 +10,7 @@ toc: true
 
 ## {{doc.title}}
 
-{{doc}}
+{{doc.content}}
 
 {% endif %}
 {% endfor %}
