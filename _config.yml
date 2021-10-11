@@ -1,14 +1,31 @@
 title: Bryant Finney
+subtitle: >-
+  Full Stack | Consultant | DevOps | Cloud
 description: >-
-  This site contains my technical thoughts, passions, and history.
+  This site provides some of my thoughts, passions, and professional history.
 
-baseurl: "/about"
-url: "https://bryant-finney.github.io"
+author:
+  name: Bryant Finney
+  bio: |
+    From low-level firmware to cloud-native systems, research and development have given
+    me a drive for the technical side.
+  avatar: /static/img/profile-cropped.png
+  links:
+    - label: LinkedIn
+      icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/bryant-finney/
+    - label: "Twitter"
+      icon: fab fa-fw fa-twitter-square
+      url: https://twitter.com/bryant_witha_T
+
+baseurl: /about
+url: https://bryant-finney.github.io
 github_username: bryant-finney
+repository: bryant-finney/about
 show_downloads: true
 
 # Build settings
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
@@ -25,4 +42,21 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-theme: jekyll-theme-minimal
+theme: minimal-mistakes-jekyll
+
+defaults:
+  - scope:
+      path: /me
+    values:
+      author_profile: true
+
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
