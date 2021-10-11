@@ -1,3 +1,5 @@
 main:
+  - title: Resume
+    url: /resume/
   - title: Me
     url: /me

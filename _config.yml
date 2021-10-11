@@ -1,3 +1,6 @@
+include:
+  - _pages
+
 title: Bryant Finney
 subtitle: >-
   Full Stack | Consultant | DevOps | Cloud
@@ -50,6 +53,11 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+collections:
+  resume:
+    output: true
+    permalink: /:collection/:path/
+
 defaults:
   - scope:
       path: /me
@@ -66,3 +74,11 @@ defaults:
       comments: true
       share: true
       related: true
+
+  # _resume
+  - scope:
+      path: ""
+      type: resume
+    values:
+      layout: single
+      author_profile: false
