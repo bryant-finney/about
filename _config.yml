@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-remote-theme
+  - github-pages
 
 exclude:
   - .sass-cache/
@@ -42,8 +43,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-theme: jekyll-theme-minimal
 
 defaults:
   - scope:
