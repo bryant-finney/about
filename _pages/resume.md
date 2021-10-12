@@ -11,13 +11,18 @@ toc: true
 
 ## {{site.data.employers[tag].name}}
 
+{% if tag == "ierus" %}
+
+{%- comment -%} TODO: figure this heading out (it looks weird) {%- endcomment -%}
+
+### _SBIRs / R&D_
+
+{% endif %}
+
 {% assign docs = site.resume | sort: "i_order" | where: "resume_tag", tag %}
 {% for doc in docs reversed %}
 
-{{doc.position}}
-
-### {{doc.title}}
-
+{{doc.level}} [{{doc.title}}]({{site.baseurl}}/{{doc.url}})
 {{doc.content}}
 
 {% endfor %}

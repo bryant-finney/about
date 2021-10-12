@@ -81,6 +81,7 @@ defaults:
       type: resume
     values:
       layout: single
+      level: "###"
       author_profile: false
 
 footer:
