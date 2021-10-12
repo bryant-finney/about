@@ -5,12 +5,20 @@ permalink: /resume/
 toc: true
 ---
 
-{% for doc in site.documents reversed %}
-{% if doc.collection == "resume" %}
+{% assign tags = "ierus rmci uah" | split: " " %}
 
-## {{doc.title}}
+{% for tag in tags %}
+
+## {{site.data.employers[tag].name}}
+
+{% assign docs = site.resume | sort: "i_order" | where: "resume_tag", tag %}
+{% for doc in docs reversed %}
+
+{{doc.position}}
+
+### {{doc.title}}
 
 {{doc.content}}
 
-{% endif %}
+{% endfor %}
 {% endfor %}
