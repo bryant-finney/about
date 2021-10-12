@@ -6,8 +6,8 @@ resume_tag: ierus
 level: "####"
 i_order: 40
 sidebar:
-  - title: IERUS Technologies
-    image: https://k3p3i5s7.stackpathcdn.com/app/uploads/2019/09/IERUS-Logo-1-transparent-background-no-tagline300px-250x77.pn
+  - image: https://k3p3i5s7.stackpathcdn.com/app/uploads/2019/09/IERUS-Logo-1-transparent-background-no-tagline300px-250x77.png
+    url: https://www.ierustech.com/
 ---
 
 - Analyzed the effectiveness of different machine-learning techniques and
