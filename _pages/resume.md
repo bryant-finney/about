@@ -5,7 +5,7 @@ permalink: /resume/
 toc: true
 ---
 
-{% for doc in site.documents %}
+{% for doc in site.documents reversed %}
 {% if doc.collection == "resume" %}
 
 ## {{doc.title}}
