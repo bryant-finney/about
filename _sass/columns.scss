@@ -18,3 +18,9 @@
     width: calc(100% - 100px);
   }
 }
+
+.img {
+  &.logo {
+    max-width: 225px;
+  }
+}

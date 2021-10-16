@@ -9,7 +9,7 @@ toc: true
 
 {% for tag in tags %}
 
-## {{site.data.employers[tag].name}}
+{{site.data.employers[tag].name}}
 
 <div class="row">
 
@@ -20,9 +20,8 @@ toc: true
 <col width="30%" />
 <col width="70%" />
 </colgroup>
-<thead><th/><th/></thead>
+<thead>{{site.data.employers[tag].logo}}</thead>
 <tbody>
-{% include trow.html label='name' employer=tag %}
 {% include trow.html label='title' employer=tag %}
 {% include trow.html label='start' employer=tag %}
 {% include trow.html label='end' employer=tag %}
