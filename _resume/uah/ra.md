@@ -3,7 +3,7 @@ title: Research Assistant
 date: 2021-10-11
 collection: resume
 i_order: 20
-resume_tag: uah
+resume_tag: uah-ra
 ---
 
 - Designed a mechanism for releasing non-lethal grenades from multirotor UAVs to

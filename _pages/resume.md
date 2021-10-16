@@ -1,29 +1,48 @@
 ---
 title: Resume
-layout: single
+layout: single-no-bar
 permalink: /resume/
 toc: true
 ---
 
-{% assign tags = "ierus rmci uah" | split: " " %}
+{% assign tags = "ierus rmci uah-ra uah-pass" | split: " " %}
 
 {% for tag in tags %}
 
 ## {{site.data.employers[tag].name}}
 
-{% if tag == "ierus" %}
+<div class="row">
 
-{%- comment -%} TODO: figure this heading out (it looks weird) {%- endcomment -%}
+<div class="left-col" markdown=1>
 
-### _SBIRs / R&D_
+<table>
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead><th/><th/></thead>
+<tbody>
+{% include trow.html label='name' employer=tag %}
+{% include trow.html label='title' employer=tag %}
+{% include trow.html label='start' employer=tag %}
+{% include trow.html label='end' employer=tag %}
+{% include trow.html label='site' employer=tag %}
+</tbody>
+</table>
 
-{% endif %}
+</div>
+<div class="right-col" markdown=1>
 
 {% assign docs = site.resume | sort: "i_order" | where: "resume_tag", tag %}
 {% for doc in docs reversed %}
 
-{{doc.level}} [{{doc.title}}]({{site.baseurl}}/{{doc.url}})
+### [{{doc.title}}]({{site.baseurl}}/{{doc.url}})
+
 {{doc.content}}
 
 {% endfor %}
+
+</div>
+</div>
+
 {% endfor %}

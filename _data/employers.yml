@@ -1,10 +1,27 @@
-uah:
+uah-pass:
   name: University of Alabama in Huntsville
+  title: PASS Leader
+  start: 2010 August
+  end: 2012 December
+  site: <a href="https://www.uah.edu/ssc/pass">uah.edu/ssc/pass</a>
+
+uah-ra:
+  name: University of Alabama in Huntsville
+  title: Research Assistant
+  start: 2012 February
+  end: 2012 December
+  site: <a href="https://www.uah.edu/smap">uah.edu/smap</a>
 
 rmci:
   name: RMCI, Inc.
-  role: Embedded Systems Engineer
+  title: Embedded Systems Engineer
+  start: 2012 August
+  end: 2016 October
+  site: <a href="https://rmci-inc.com/">rmci-inc.com</a>
 
 ierus:
   name: IERUS Technologies
-  role: Engineer
+  title: Engineer
+  start: 2016 October
+  end: 2019 February
+  site: <a href="https://ierustech.com/">ierustech.com</a>

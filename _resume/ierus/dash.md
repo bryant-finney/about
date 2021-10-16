@@ -3,7 +3,6 @@ title: DASH
 date: 2021-10-11
 collection: resume
 resume_tag: ierus
-level: "####"
 i_order: 60
 ---
 
