@@ -5,15 +5,6 @@ collection: resume
 resume_tag: ierus
 level: "####"
 i_order: 70
-sidebar:
-  - image: https://k3p3i5s7.stackpathcdn.com/app/uploads/2019/09/IERUS-Logo-1-transparent-background-no-tagline300px-250x77.png
-    url: https://www.ierustech.com/
-  - title: CENA
-    image: https://k3p3i5s7.stackpathcdn.com/app/uploads/2020/07/characterizing-material-with-handheld-probe-1.png
-    url: https://www.ierustech.com/commercial-products/compact-electromagnetic-nondestructive-assessment-probe/
-    text: |
-      Compact Electromagnetic Nondestructive Assessment (CENA) Probe is a handheld High Sensitivity RF Probe. It is used
-      for nondestructive evaluation of materials for property and defect inspection.
 ---
 
 - Developed Python application for interactively controlling a vector network
