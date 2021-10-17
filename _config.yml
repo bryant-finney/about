@@ -23,9 +23,12 @@ author:
     - label: GitLab
       icon: fab fa-gitlab
       url: https://gitlab.com/bryant.finney
-    - label: "Twitter"
+    - label: Twitter
       icon: fab fa-fw fa-twitter-square
       url: https://twitter.com/bryant_witha_T
+    - label: Facebook
+      icon: fab fa-facebook
+      url: https://facebook.com/bfinney1
 
 baseurl: /about
 url: https://bryant-finney.github.io
@@ -54,6 +57,9 @@ exclude:
   - vendor/ruby/
 
 collections:
+  fun:
+    output: true
+    permalink: /blog/:collection/:path/
   resume:
     output: true
     permalink: /:collection/:path/
@@ -74,6 +80,7 @@ defaults:
       comments: true
       share: true
       related: true
+      author_profile: true
 
   # _resume
   - scope:
@@ -83,6 +90,15 @@ defaults:
       layout: single
       level: "###"
       author_profile: false
+
+  # blog posts
+  - scope:
+      path: /blog
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      share: true
 
 footer:
   links:

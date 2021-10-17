@@ -1,8 +1,10 @@
 ---
 layout: single
-title: Boston Fun
+title: Boston History Experience
 date: 2021-10-16
-categories: blog fun
+categories:
+  - blog
+  - fun
 tags:
   - boston
   - explore
