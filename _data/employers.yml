@@ -26,3 +26,11 @@ ierus:
   end: 2019 February
   logo: <a href="https://www.ierustech.com/"><img class="img logo" src="https://k3p3i5s7.stackpathcdn.com/app/uploads/2019/09/IERUS-Logo-1-transparent-background-no-tagline300px-250x77.png"/></a>
   site: <a href="https://ierustech.com/">ierustech.com</a>
+
+odl:
+  name: "## *Outdoorlink*"
+  title: Lead Software Engineer
+  start: 2019 February
+  end: 2020 August
+  site: <a href="https://smartlinkcontrol.com">smartlinkcontrol.com</a>
+  summary_file: summaries/odl.md

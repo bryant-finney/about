@@ -5,7 +5,7 @@ permalink: /resume/
 toc: true
 ---
 
-{% assign tags = "ierus rmci uah-ra uah-pass" | split: " " %}
+{% assign tags = "odl ierus rmci uah-ra uah-pass" | split: " " %}
 
 {% for tag in tags %}
 
@@ -31,6 +31,14 @@ toc: true
 
 </div>
 <div class="right-col" markdown=1>
+
+{% if site.data.employers[tag].summary_file %}
+{% capture summary_file %}{{ site.data.employers[tag].summary_file }}{% endcapture %}
+
+### Summary
+
+{% include_relative {{ summary_file }} %}
+{% endif %}
 
 {% assign docs = site.resume | sort: "i_order" | where: "resume_tag", tag %}
 {% for doc in docs reversed %}
