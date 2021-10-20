@@ -3,11 +3,11 @@ title: Resume
 layout: single-no-bar
 permalink: /resume/
 toc: true
-resume_date: 2021-10-20
+date: 2021-10-20
 ---
 
-<a href="/about/assets/pdf/{{page.resume_date}}-resume.pdf" download="{{page.resume_date}}-finney-resume.pdf">
-  <button class="btn"><i class="fa fa-download"></i> Download</button>
+<a href="/about/assets/pdf/{{page.date}}-resume.pdf" download="{{page.date}}-finney-resume.pdf">
+  <button class="btn"><i class="fa fa-download"></i> Download: PDF ({{page.date}})</button>
 </a>
 
 {% assign tags = "odl ierus rmci uah-ra uah-pass" | split: " " %}
