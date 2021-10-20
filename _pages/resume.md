@@ -5,6 +5,12 @@ permalink: /resume/
 toc: true
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="/about/assets/pdf/resume.pdf" download="2021-10-19-finney-resume.pdf">
+  <button class="btn"><i class="fa fa-download"></i> Download</button>
+</a>
+
 {% assign tags = "odl ierus rmci uah-ra uah-pass" | split: " " %}
 
 {% for tag in tags %}
