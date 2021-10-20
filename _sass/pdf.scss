@@ -2,6 +2,9 @@
 //   page-break-after: avoid !important;
 //   page-break-before: avoid !important;
 // }
+h3 {
+  page-break-before: always;
+}
 
 p {
   // page-break-after: avoid !important;

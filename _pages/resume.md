@@ -3,11 +3,10 @@ title: Resume
 layout: single-no-bar
 permalink: /resume/
 toc: true
+resume_date: 2021-10-20
 ---
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<a href="/about/assets/pdf/resume.pdf" download="2021-10-19-finney-resume.pdf">
+<a href="/about/assets/pdf/{{page.resume_date}}-resume.pdf" download="{{page.resume_date}}-finney-resume.pdf">
   <button class="btn"><i class="fa fa-download"></i> Download</button>
 </a>
 
