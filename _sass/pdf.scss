@@ -1,7 +1,10 @@
-.item {
-  &.item {
-    page-break-inside: avoid !important;
-    page-break-after: avoid !important;
-    page-break-before: avoid !important;
-  }
+// * {
+//   page-break-after: avoid !important;
+//   page-break-before: avoid !important;
+// }
+
+p {
+  // page-break-after: avoid !important;
+  page-break-before: always !important;
+  page-break-inside: avoid !important;
 }

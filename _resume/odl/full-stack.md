@@ -17,4 +17,13 @@ i_order: 80
   - Developed reusable Django application for logging REST API HTTP request details to
     multiple servers over TCP, supporting better OutdoorLink support to customers
     utilizing the REST API
-- Supported app migration 
+- Supported app migration from on-prem servers to an AWS cloud deployment
+  - Managed AWS infrastructure for networking, compute resources, user authorization,
+    scaling, and deployments
+  - Configured system and application logging across
+    [AWS EC2](https://aws.amazon.com/ec2/) instances for `NGINX`, `python`, and
+    `syslog` for improved visibility and troubleshooting
+- Integrated [sentry.io](https://sentry.io/welcome/) for error monitoring, tracking,
+  and triage
+- Optimized PostgreSQL DBMS configuration to mitigate OOM conditions, stale connections,
+  and disk space usage
