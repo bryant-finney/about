@@ -10,7 +10,7 @@ date: 2021-10-20
   <button class="btn"><i class="fa fa-download"></i> Download: PDF ({{page.date}})</button>
 </a>
 
-{% assign tags = "odl ierus rmci uah-ra uah-pass" | split: " " %}
+{% assign tags = "morse odl-consult odl ierus rmci uah-ra uah-pass" | split: " " %}
 
 {% for tag in tags %}
 

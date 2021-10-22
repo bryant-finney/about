@@ -1,6 +1,8 @@
+{% if site.data.employers[include.employer][include.label] %}
 <tr>
   <th class="header" markdown="span">{{ include.label | capitalize }}</th>
   <td markdown="span">
     {{site.data.employers[include.employer][include.label]}}
   </td>
 </tr>
+{% endif %}

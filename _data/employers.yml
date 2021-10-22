@@ -28,9 +28,24 @@ ierus:
   site: <a href="https://ierustech.com/">ierustech.com</a>
 
 odl:
-  name: "## *Outdoorlink*"
   title: Lead Software Engineer
   start: 2019 February
   end: 2020 August
+
+odl-consult:
+  name: "## *Outdoorlink*"
+  title: Software Engineering Consultant
+  start: 2020 August
+  end: Present
   site: <a href="https://smartlinkcontrol.com">smartlinkcontrol.com</a>
-  summary_file: summaries/odl.md
+  logo: <a href="https://smartlinkcontrol.com"><img class="img logo" src="https://smartlinkcontrol.com/wp-content/uploads/2021/09/OutdoorLink-Logo-Smaller.png"/></a>
+  summary_file: summaries/odl-consult.md
+
+morse:
+  name: "## *MORSE Corp*"
+  title: Full-Stack Software Developer
+  start: 2020 August
+  end: Present
+  site: <a href="https://www.morsecorp.com/">morsecorp.com</a>
+  logo: <a href="https://www.morsecorp.com/"><img class="img logo" src="https://www.morsecorp.com/images/webLogo.svg"/></a>
+  summary_file: summaries/morse.md
