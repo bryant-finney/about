@@ -3,7 +3,7 @@ title: Resume
 layout: single-no-bar
 permalink: /resume/
 toc: true
-date: 2021-10-20
+date: 2021-10-22
 ---
 
 <a href="/about/assets/pdf/{{page.date}}-resume.pdf" download="{{page.date}}-finney-resume.pdf">
