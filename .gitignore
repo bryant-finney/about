@@ -1,7 +1,8 @@
+*.code-workspace
+.DS_Store
 .bundle/config
 .jekyll-cache
 .jekyll-metadata
 .sass-cache
 _site
 vendor
-*.code-workspace
