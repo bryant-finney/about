@@ -45,7 +45,7 @@ morse:
   name: "## *MORSE Corp*"
   title: Full-Stack Software Developer
   start: 2020 August
-  end: Present
+  end: 2021 November
   site: <a href="https://www.morsecorp.com/">morsecorp.com</a>
   logo: <a href="https://www.morsecorp.com/"><img class="img logo" src="https://www.morsecorp.com/images/webLogo.svg"/></a>
   summary_file: summaries/morse.md
