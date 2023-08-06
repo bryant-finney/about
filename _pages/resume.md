@@ -3,14 +3,14 @@ title: Resume
 layout: single-no-bar
 permalink: /resume/
 toc: true
-date: 2021-10-22
+date: 2023-08-06
 ---
 
 <a href="/about/assets/pdf/{{page.date}}-resume.pdf" download="{{page.date}}-finney-resume.pdf">
   <button class="btn"><i class="fa fa-download"></i> Download: PDF ({{page.date}})</button>
 </a>
 
-{% assign tags = "morse odl-consult odl ierus rmci uah-ra uah-pass" | split: " " %}
+{% assign tags = "hometap morse odl-consult odl ierus rmci uah-ra uah-pass" | split: " " %}
 
 {% for tag in tags %}
 

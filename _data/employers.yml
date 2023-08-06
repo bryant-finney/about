@@ -24,7 +24,7 @@ ierus:
   title: Engineer
   start: 2016 October
   end: 2019 February
-  logo: <a href="https://www.ierustech.com/"><img class="img logo" src="https://k3p3i5s7.stackpathcdn.com/app/uploads/2019/09/IERUS-Logo-1-transparent-background-no-tagline300px-250x77.png"/></a>
+  logo: <a href="https://www.ierustech.com/"><img class="img logo" src="https://www.ierustech.com/wp-content/uploads/2019/09/cropped-IERUS-Logo-1-transparent-background-670x194.png"/></a>
   site: <a href="https://ierustech.com/">ierustech.com</a>
 
 odl:
@@ -36,7 +36,7 @@ odl-consult:
   name: "## *Outdoorlink*"
   title: Software Engineering Consultant
   start: 2020 August
-  end: Present
+  end: 2022 January
   site: <a href="https://smartlinkcontrol.com">smartlinkcontrol.com</a>
   logo: <a href="https://smartlinkcontrol.com"><img class="img logo" src="https://smartlinkcontrol.com/wp-content/uploads/2021/09/OutdoorLink-Logo-Smaller.png"/></a>
   summary_file: summaries/odl-consult.md
@@ -49,3 +49,12 @@ morse:
   site: <a href="https://www.morsecorp.com/">morsecorp.com</a>
   logo: <a href="https://www.morsecorp.com/"><img class="img logo" src="https://www.morsecorp.com/images/webLogo.svg"/></a>
   summary_file: summaries/morse.md
+
+hometap:
+  name: "## *Hometap*"
+  title: DevOps Engineer
+  start: 2021 November
+  end: Present
+  site: <a href="https://www.hometap.com/">hometap.com</a>
+  logo: <a href="https://www.hometap.com/"><img class="img logo" src="https://cdn.sanity.io/images/hmaiuprw/production/c957f4aa49d5493cf246573a49e1fb30219cf487-205x56.svg"/></a>
+  summary_file: summaries/hometap.md

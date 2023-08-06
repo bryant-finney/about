@@ -5,7 +5,7 @@ title: Bryant Finney
 subtitle: >-
   Full Stack | Consultant | DevOps | Cloud
 description: >-
-  This site provides some of my thoughts, passions, and professional history.
+  This site shares some of my thoughts, passions, and professional history.
 
 author:
   name: Bryant Finney
@@ -23,9 +23,6 @@ author:
     - label: GitLab
       icon: fab fa-gitlab
       url: https://gitlab.com/bryant.finney
-    - label: Twitter
-      icon: fab fa-fw fa-twitter-square
-      url: https://twitter.com/bryant_witha_T
     - label: Facebook
       icon: fab fa-facebook
       url: https://facebook.com/bfinney1
