@@ -3,12 +3,18 @@ title: Resume
 layout: single-no-bar
 permalink: /resume/
 toc: true
-date: 2023-08-06
+date: 2023-09-02
 ---
 
 <a href="/about/assets/pdf/{{page.date}}-resume.pdf" download="{{page.date}}-finney-resume.pdf">
   <button class="btn"><i class="fa fa-download"></i> Download: PDF ({{page.date}})</button>
 </a>
+
+# Skills
+
+{% include_relative summaries/skills.md badge-style='for-the-badge' color='000d63' %}
+
+# Work Experience
 
 {% assign tags = "hometap morse odl-consult odl ierus rmci uah-ra uah-pass" | split: " " %}
 
@@ -58,3 +64,9 @@ date: 2023-08-06
 </div>
 
 {% endfor %}
+
+# Education
+
+{% include_relative summaries/education.md h='80pt' %}
+
+{% include_relative summaries/securityplus.md %}
