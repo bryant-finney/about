@@ -24,11 +24,16 @@ and technology has equipped me to lead engineering teams to success.
 
 {% for tag in tags %}
 
+{% if tag == 'odl' %}
+<br/>
+{% endif %}
+
 {% include tsum.html employer=tag %}
 
 ---
 
 {% if site.data.employers[tag].summary_file %}
+
 {% capture summary_file %}{{ site.data.employers[tag].summary_file }}{% endcapture %}
 
 {% include_relative {{ summary_file }} %}

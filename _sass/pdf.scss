@@ -1,13 +1,26 @@
-// * {
-//   page-break-after: avoid !important;
-//   page-break-before: avoid !important;
-// }
 h3 {
   page-break-before: always;
 }
 
-p {
-  // page-break-after: avoid !important;
+p,
+table,
+tr,
+td {
   page-break-before: always !important;
   page-break-inside: avoid !important;
+}
+
+table.tsum {
+  display: table;
+  width: 100%;
+}
+
+table.tsum tr td {
+  border-bottom: none;
+  padding: 0;
+}
+
+table.tsum tr td h3,
+table.tsum tr td h4 {
+  font-size: x-large;
 }
