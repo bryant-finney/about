@@ -10,9 +10,9 @@ Responsibilities:
 
 - design and implement CI/CD pipelines for multiple applications, languages, and life cycles using
   the following platforms:
-  - [GitLab CI/CD <i class="fab fa-gitlab"></i>](https://docs.gitlab.com/ee/ci/pipelines/)
-  - [GitHub Actions <i class="fab fa-github"></i>](https://docs.github.com/en/actions)
-  - [CircleCI](https://circleci.com/)
+  [GitLab CI/CD <i class="fab fa-gitlab"></i>](https://docs.gitlab.com/ee/ci/pipelines/),
+  [GitHub Actions <i class="fab fa-github"></i>](https://docs.github.com/en/actions),
+  [CircleCI](https://circleci.com/)
 - optimize the execution speed of a large [Python / Django](https://www.djangoproject.com/) test
   suite, reducing
   [lead time for changes](https://www.atlassian.com/devops/frameworks/devops-metrics) and
