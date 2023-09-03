@@ -1,6 +1,6 @@
 ---
 layout: single-no-bar
-title: Bryant Finney
+title: ""
 permalink: /pdf/
 date: 2023-09-02
 js:
