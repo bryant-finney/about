@@ -10,7 +10,7 @@ i_order: 100
   managing product data
 - Developed a Django application for user identity and access management
 
-## AWS Infrastructure
+#### AWS Infrastructure
 
 I supported maintenance and operations of the infrastructure that Outdoorlink uses to
 host its web applications and data. Additionally, I implemented

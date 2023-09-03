@@ -16,5 +16,5 @@ Responsibilities:
 - collaborate cross-functionally with internal stakeholders to identify pain points and bottlenecks
   between scrum teams, and develop solutions to address them
 - implement, maintain, and champion
-  [cross-platform Docker image builds](https://docs.docker.com/build/building/multi-platform/) as
-  engineering team transitioned from `x86_64` to `arm64` development machines
+  [cross-platform Docker image builds <i class="fab fa-docker"></i>](https://docs.docker.com/build/building/multi-platform/)
+  as engineering team transitioned from `x86_64` to `arm64` development machines
