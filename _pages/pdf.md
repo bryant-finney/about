@@ -21,10 +21,6 @@ and technology has equipped me to lead engineering teams to success.
 
 {% for tag in tags %}
 
-{% if tag == 'odl' %}
-<br/>
-{% endif %}
-
 {% include tsum.html employer=tag %}
 
 ---
@@ -51,6 +47,12 @@ and technology has equipped me to lead engineering teams to success.
 {% assign tags = "ierus rmci uah-ra uah-pass" | split: " " %}
 
 {% for tag in tags %}
+
+{% if tag == 'rmci' %}
+<br/>
+<br/>
+<br/>
+{% endif %}
 
 {% include tsum.html employer=tag %}
 
