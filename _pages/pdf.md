@@ -1,11 +1,8 @@
 ---
 layout: single-no-bar
 title: ""
-permalink: /pdf/
-date: 2023-09-02
-js:
-  - https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js
+permalink: /resume/pdf/
+date: 2023-09-20
 ---
 
 With more than 10 years of engineering experience across multiple industries, I bring positivity and
@@ -48,6 +45,24 @@ and technology has equipped me to lead engineering teams to success.
 {{doc.content}}
 
 {% endfor %}
+
+{% endfor %}
+
+{% assign tags = "ierus rmci uah-ra uah-pass" | split: " " %}
+
+{% for tag in tags %}
+
+{% include tsum.html employer=tag %}
+
+---
+
+{% if site.data.employers[tag].summary_file %}
+
+{% capture summary_file %}{{ site.data.employers[tag].summary_file }}{% endcapture %}
+
+{% include_relative {{ summary_file }} %}
+
+{% endif %}
 
 {% endfor %}
 

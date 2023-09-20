@@ -1,31 +1,43 @@
 uah-pass:
+  name_raw: University of Alabama in Huntsville
   title: PASS Leader
   start: 2010 August
   end: 2012 December
   site: <a href="https://www.uah.edu/ssc/pass">uah.edu/ssc/pass</a>
+  location: Huntsville, AL
+  summary_file: summaries/pass.md
 
 uah-ra:
   name: "## *University of Alabama in Huntsville*"
+  name_raw: University of Alabama in Huntsville
   title: Research Assistant
   start: 2012 February
   end: 2012 December
+  location: Huntsville, AL
   logo: <a href="https://www.uah.edu/"><img class="img logo" src="https://www.uah.edu/templates/uah/images/logoblue.svg"/></a>
   site: <a href="https://www.uah.edu/smap">uah.edu/smap</a>
+  summary_file: summaries/ra.md
 
 rmci:
   name: "## *RMCI, Inc.*"
+  name_raw: RMCI, Inc.
   title: Embedded Systems Engineer
   start: 2012 August
   end: 2016 October
+  location: Huntsville, AL
   site: <a href="https://rmci-inc.com/">rmci-inc.com</a>
+  summary_file: summaries/rmci.md
 
 ierus:
   name: "## *IERUS Technologies*"
+  name_raw: IERUS Technologies
   title: Engineer
   start: 2016 October
   end: 2019 February
+  location: Huntsville, AL
   logo: <a href="https://www.ierustech.com/"><img class="img logo" src="https://www.ierustech.com/wp-content/uploads/2019/09/cropped-IERUS-Logo-1-transparent-background-670x194.png"/></a>
   site: <a href="https://ierustech.com/">ierustech.com</a>
+  summary_file: summaries/ierus.md
 
 odl:
   name_raw: Outdoorlink
