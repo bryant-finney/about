@@ -104,3 +104,8 @@ footer:
     - label: Sitemap
       icon: fa fa-sitemap
       url: /about/sitemap
+
+analytics:
+  provider: google-gtag
+  google:
+    tracking_id: G-VHZ58ZETXZ
