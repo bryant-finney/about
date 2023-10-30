@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Hello, Elucid!
-date: 2023-10-29
+date: 2023-10-30
 categories:
   - blog
   - tech
@@ -69,4 +69,5 @@ will soon: he loves Zoom.
   - Drive and agility
 - Things I need help with:
   - The three great challenges of computer science: **estimation**, and **off-by-one errors**
-- I was a homeschooler, and fencing was my highschool sport
+  - Finding my keys
+- I was a homeschooler, and fencing was my highschool sport 🤺
