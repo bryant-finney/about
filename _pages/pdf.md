@@ -19,7 +19,16 @@ and technology has equipped me to lead engineering teams to success.
 
 ## Work Experience
 
-{% assign tags = "elucid hometap morse odl-consult odl" | split: " " %}
+<!--
+  `tags` is the full ordered employer list. `detailed` selects which of those
+  also render their individual role entries (full bullets) below the summary;
+  every other employer shows the summary only. To shorten or lengthen this PDF
+  without touching the `/resume/` page or any role files, move tags in or out
+  of `detailed`.
+-->
+
+{% assign tags = "elucid hometap morse odl-consult odl ierus rmci uah-ra uah-pass" | split: " " %}
+{% assign detailed = "elucid" | split: " " %}
 
 {% for tag in tags %}
 
@@ -34,6 +43,20 @@ and technology has equipped me to lead engineering teams to success.
 {% include_relative {{ summary_file }} %}
 
 {% endif %}
+
+<!--
+  `odl` (Outdoorlink, Lead Software Engineer) has no `summary_file` in
+  employers.yml because the `/resume/` page renders its role entries in full.
+  Include its summary here only, so the condensed PDF shows context for the
+  role without adding a summary block to the `/resume/` page.
+-->
+{% if tag == "odl" %}
+
+{% include_relative summaries/odl.md %}
+
+{% endif %}
+
+{% if detailed contains tag %}
 
 {% assign docs = site.resume | sort: "i_order" | where: "resume_tag", tag %}
 {% for doc in docs reversed %}
@@ -44,28 +67,12 @@ and technology has equipped me to lead engineering teams to success.
 
 {% endfor %}
 
-{% endfor %}
-
-{% assign tags = "ierus rmci uah-ra uah-pass" | split: " " %}
-
-{% for tag in tags %}
-
-{% include tsum.html employer=tag %}
-
----
-
-{% if site.data.employers[tag].summary_file %}
-
-{% capture summary_file %}{{ site.data.employers[tag].summary_file }}{% endcapture %}
-
-{% include_relative {{ summary_file }} %}
-
 {% endif %}
 
 {% endfor %}
 
 ## Education
 
-{% include_relative summaries/education.md h='80pt' %}
+{% include_relative summaries/education.md h='40pt' %}
 
 {% include_relative summaries/securityplus.md %}

@@ -59,9 +59,12 @@
     content: none !important;
   }
 
-  // Hide UI chrome that has no purpose in a printed resume.
+  // Hide UI chrome that has no purpose in a printed resume. The theme's
+  // "Updated: <date>" meta footer (.page__meta) otherwise overflows onto an
+  // otherwise-blank trailing page.
   .btn,
-  .img.logo {
+  .img.logo,
+  .page__meta {
     display: none !important;
   }
 
