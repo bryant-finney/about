@@ -78,3 +78,14 @@ hometap:
   site: <a href="https://www.hometap.com/">hometap.com</a>
   logo: <a href="https://www.hometap.com/"><img class="img logo" src="https://cdn.sanity.io/images/hmaiuprw/production/c957f4aa49d5493cf246573a49e1fb30219cf487-205x56.svg"/></a>
   summary_file: summaries/hometap.md
+
+elucid:
+  name: "## *Elucid Bioimaging*"
+  name_raw: Elucid
+  title: Principal Platform Engineer
+  start: 2023 October
+  end: Present
+  location: Boston, MA (hybrid)
+  site: <a href="https://elucid.com/">elucid.com</a>
+  logo: <a href="https://elucid.com/"><img class="img logo" src="https://elucid.wpengine.com/wp-content/uploads/2021/09/elucid-logo-white.svg"/></a>
+  summary_file: summaries/elucid.md

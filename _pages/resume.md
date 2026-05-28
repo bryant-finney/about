@@ -16,7 +16,7 @@ date: 2023-09-20
 
 # Work Experience
 
-{% assign tags = "hometap morse odl-consult odl ierus rmci uah-ra uah-pass" | split: " " %}
+{% assign tags = "elucid hometap morse odl-consult odl ierus rmci uah-ra uah-pass" | split: " " %}
 
 {% for tag in tags %}
 
