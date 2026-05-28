@@ -35,7 +35,6 @@ ierus:
   start: 2016 October
   end: 2019 February
   location: Huntsville, AL
-  logo: <a href="https://www.ierustech.com/"><img class="img logo" src="https://www.ierustech.com/wp-content/uploads/2019/09/cropped-IERUS-Logo-1-transparent-background-670x194.png"/></a>
   site: <a href="https://ierustech.com/">ierustech.com</a>
   summary_file: summaries/ierus.md
 
@@ -54,7 +53,6 @@ odl-consult:
   end: 2022 January
   location: Boston, MA (remote)
   site: <a href="https://smartlinkcontrol.com">smartlinkcontrol.com</a>
-  logo: <a href="https://smartlinkcontrol.com"><img class="img logo" src="https://smartlinkcontrol.com/wp-content/uploads/2021/09/OutdoorLink-Logo-Smaller.png"/></a>
   summary_file: summaries/odl-consult.md
 
 morse:
