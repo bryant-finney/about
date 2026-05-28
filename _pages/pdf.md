@@ -13,7 +13,9 @@ and technology has equipped me to lead engineering teams to success.
 
 ## Skills
 
+<div class="skill-badges" markdown="1">
 {% include_relative summaries/skills.md badge-style='for-the-badge' color='8ce1ff' %}
+</div>
 
 ## Work Experience
 
@@ -47,12 +49,6 @@ and technology has equipped me to lead engineering teams to success.
 {% assign tags = "ierus rmci uah-ra uah-pass" | split: " " %}
 
 {% for tag in tags %}
-
-{% if tag == 'rmci' %}
-<br/>
-<br/>
-<br/>
-{% endif %}
 
 {% include tsum.html employer=tag %}
 

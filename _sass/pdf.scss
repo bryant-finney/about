@@ -6,6 +6,38 @@
     page-break-inside: avoid;
   }
 
+  // The theme keeps entire <ul>/<ol> blocks together, which strands a
+  // half-empty page whenever a role's bullet list can't fit in the space
+  // remaining. Let lists flow across page boundaries (individual bullets
+  // stay intact via the rule above) to reclaim that wasted space.
+  ul,
+  ol {
+    page-break-inside: auto;
+  }
+
+  // Tighten the theme's generous default spacing so content packs densely
+  // without removing anything. The theme uses hr margin: 2.25rem (~72px each).
+  hr {
+    margin: 0.7rem 0 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.4rem !important;
+  }
+
+  p {
+    margin-bottom: 0.4rem;
+  }
+
+  li {
+    margin-bottom: 0.2rem;
+  }
+
   // Don't strand a heading at the bottom of a page.
   h1,
   h2,
@@ -31,6 +63,14 @@
   .btn,
   .img.logo {
     display: none !important;
+  }
+
+  // The theme forces `img { display: block }` in print, which stacks each
+  // skill badge on its own line. Restore inline flow so they wrap as a block,
+  // matching the on-screen layout.
+  .skill-badges img {
+    display: inline-block !important;
+    max-width: none !important;
   }
 }
 

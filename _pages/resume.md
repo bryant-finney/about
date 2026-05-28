@@ -12,7 +12,9 @@ date: 2026-05-28
 
 # Skills
 
+<div class="skill-badges" markdown="1">
 {% include_relative summaries/skills.md badge-style='for-the-badge' color='000d63' %}
+</div>
 
 # Work Experience
 
