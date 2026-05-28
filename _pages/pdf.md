@@ -2,7 +2,7 @@
 layout: single-no-bar
 title: ""
 permalink: /resume/pdf/
-date: 2023-09-20
+date: 2026-05-28
 ---
 
 With more than 10 years of engineering experience across multiple industries, I bring positivity and
@@ -17,7 +17,7 @@ and technology has equipped me to lead engineering teams to success.
 
 ## Work Experience
 
-{% assign tags = "hometap morse odl-consult odl" | split: " " %}
+{% assign tags = "elucid hometap morse odl-consult odl" | split: " " %}
 
 {% for tag in tags %}
 
