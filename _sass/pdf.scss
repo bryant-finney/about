@@ -65,6 +65,16 @@
     display: none !important;
   }
 
+  // `.page.full` (columns.scss) sets `width: calc(100% - 100px)` + float
+  // unconditionally, which carries into print and leaves ~100px of dead
+  // space on the right edge — uneven margins. Restore full width so the
+  // @page margins are symmetric.
+  .page.full {
+    width: 100% !important;
+    float: none !important;
+    padding-right: 0 !important;
+  }
+
   // The theme forces `img { display: block }` in print, which stacks each
   // skill badge on its own line. Restore inline flow so they wrap as a block,
   // matching the on-screen layout.
