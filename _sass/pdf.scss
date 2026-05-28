@@ -1,13 +1,37 @@
-h3 {
-  page-break-before: always;
-}
+@media print {
+  // Keep small blocks from splitting; let .row flow so employer h2s
+  // aren't orphaned on otherwise-empty pages.
+  tr,
+  li {
+    page-break-inside: avoid;
+  }
 
-p,
-table,
-tr,
-td {
-  page-break-before: always !important;
-  page-break-inside: avoid !important;
+  // Don't strand a heading at the bottom of a page.
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+  }
+
+  // Limit dangling lines at page edges.
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  // The Minimal Mistakes theme appends each link's href as " (url)"
+  // text in print; that clutters every bullet. Strip it.
+  a[href]:after {
+    content: none !important;
+  }
+
+  // Hide UI chrome that has no purpose in a printed resume.
+  .btn,
+  .img.logo {
+    display: none !important;
+  }
 }
 
 table.tsum {
