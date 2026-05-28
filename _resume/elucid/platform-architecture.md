@@ -21,3 +21,5 @@ Responsibilities:
 - establish cross-account, multi-region distribution patterns for
   [AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) and container images,
   decoupling build pipelines from deployment topology
+- own multi-account cost management for over eighty environments serving six product development
+  teams, balancing engineering velocity with budget accountability
