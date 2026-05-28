@@ -17,8 +17,15 @@
 
   // Tighten the theme's generous default spacing so content packs densely
   // without removing anything. The theme uses hr margin: 2.25rem (~72px each).
+  // Tighten the theme's loose 1.5 body line-height slightly; this packs every
+  // text line a touch closer without looking cramped, and is what lets the
+  // header-keep rule below land cleanly within the page budget.
+  body {
+    line-height: 1.4;
+  }
+
   hr {
-    margin: 0.7rem 0 !important;
+    margin: 0.45rem 0 !important;
   }
 
   h1,
@@ -27,7 +34,7 @@
   h4,
   h5,
   h6 {
-    margin-bottom: 0.4rem !important;
+    margin-bottom: 0.3rem !important;
   }
 
   p {
@@ -43,6 +50,14 @@
   h2,
   h3,
   h4 {
+    page-break-after: avoid;
+  }
+
+  // Employer headers are .tsum tables (not h1-h4), so the rule above doesn't
+  // hold them with their summary — they hang alone at the foot of a page.
+  // Keep the header table and the rule beneath it with what follows.
+  table.tsum,
+  hr {
     page-break-after: avoid;
   }
 
