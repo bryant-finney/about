@@ -9,10 +9,10 @@ date: 2026-05-29
   <h1>Bryant Finney</h1>
   <p class="resume-title">Principal Engineer</p>
   <p class="resume-contact">
-    <a href="mailto:finneybp@gmail.com">finneybp@gmail.com</a>
-    <span>Boston, MA</span>
-    <a href="https://www.linkedin.com/in/bryant-finney/">LinkedIn</a>
-    <a href="https://github.com/bryant-finney">GitHub</a>
+    <a href="mailto:finneybp@gmail.com"><i class="fas fa-envelope"></i>finneybp@gmail.com</a>
+    <span><i class="fas fa-map-marker-alt"></i>Boston, MA</span>
+    <a href="https://www.linkedin.com/in/bryant-finney/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    <a href="https://github.com/bryant-finney"><i class="fab fa-github"></i>GitHub</a>
   </p>
 </header>
 

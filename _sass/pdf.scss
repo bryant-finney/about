@@ -132,6 +132,9 @@ table.tsum tr td h4 {
   }
 
   .resume-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
     margin: 0;
     font-size: 0.95rem;
     color: #333;
@@ -141,11 +144,9 @@ table.tsum tr td h4 {
       white-space: nowrap;
     }
 
-    // Separate the contact items with middots instead of hard line breaks.
-    > * + *::before {
-      content: "·";
-      margin: 0 0.5em;
-      color: #333;
+    // Space each FontAwesome icon from its label.
+    i {
+      margin-right: 0.4em;
     }
   }
 }
