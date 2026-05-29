@@ -134,6 +134,7 @@ table.tsum tr td h4 {
   .resume-contact {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 0.25rem 1.25rem;
     margin: 0;
     font-size: 0.95rem;
