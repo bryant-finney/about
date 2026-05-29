@@ -2,7 +2,7 @@
 layout: single-no-bar
 title: ""
 permalink: /resume/pdf/
-date: 2026-05-28
+date: 2026-05-29
 ---
 
 <header class="resume-header">
@@ -16,7 +16,9 @@ date: 2026-05-28
   </p>
 </header>
 
-With more than 10 years of engineering experience across multiple industries, I bring positivity and
+---
+
+With more than 14 years of engineering experience across multiple industries, I bring positivity and
 a growth mindset to every team I join. My passion for learning, collaboration, knowledge sharing,
 and technology has equipped me to lead engineering teams to success.
 
