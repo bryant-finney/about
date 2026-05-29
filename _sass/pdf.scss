@@ -116,3 +116,36 @@ table.tsum tr td h3,
 table.tsum tr td h4 {
   font-size: x-large;
 }
+
+// Standalone resume header: name, title, and a single contact row. Only the
+// /resume/pdf/ page renders .resume-header, so these rules don't touch other
+// pages.
+.resume-header {
+  h1 {
+    margin: 0 0 0.1rem;
+  }
+
+  .resume-title {
+    margin: 0 0 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .resume-contact {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+
+    a,
+    span {
+      white-space: nowrap;
+    }
+
+    // Separate the contact items with middots instead of hard line breaks.
+    > * + *::before {
+      content: "·";
+      margin: 0 0.5em;
+      color: #333;
+    }
+  }
+}

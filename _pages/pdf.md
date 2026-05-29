@@ -5,6 +5,17 @@ permalink: /resume/pdf/
 date: 2026-05-28
 ---
 
+<header class="resume-header">
+  <h1>Bryant Finney</h1>
+  <p class="resume-title">Principal Engineer</p>
+  <p class="resume-contact">
+    <a href="mailto:finneybp@gmail.com">finneybp@gmail.com</a>
+    <span>Boston, MA</span>
+    <a href="https://www.linkedin.com/in/bryant-finney/">LinkedIn</a>
+    <a href="https://github.com/bryant-finney">GitHub</a>
+  </p>
+</header>
+
 With more than 10 years of engineering experience across multiple industries, I bring positivity and
 a growth mindset to every team I join. My passion for learning, collaboration, knowledge sharing,
 and technology has equipped me to lead engineering teams to success.
