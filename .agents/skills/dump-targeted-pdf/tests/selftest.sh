@@ -11,6 +11,31 @@ cd "$REPO_ROOT"
 
 step() { echo "--- $*"; }
 
+# Failure-path safety net: if any assertion below trips `set -e` mid-scenario,
+# this trap still tears down whatever that scenario could have left live —
+# the scratch clone, the render scenario's server/workspace on :4123, and any
+# scenario-local files/pages. Successful runs already clean up explicitly
+# inline (those inline cleanups double as real assertions against
+# cleanup.sh's gates); this trap is a backstop, not a substitute, so its own
+# gate failures are swallowed with `|| true` to avoid masking the actual test
+# failure that triggered it.
+scratch=""
+on_exit() {
+  local status=$?
+  rm -f selftest-stray.txt
+  rm -f "_pages/r-selftest-stale.md"
+  if [[ -n "${rid:-}" ]]; then
+    rm -f "_pages/$rid.md"
+    rm -rf ".tmp/dump-targeted-pdf/$rid"
+  fi
+  "$S/cleanup.sh" "r-selftest-render" >/dev/null 2>&1 || true
+  if [[ -n "$scratch" && -d "$scratch" ]]; then
+    rm -rf "$scratch"
+  fi
+  exit "$status"
+}
+trap on_exit EXIT
+
 step "check_pages: pinned counts on committed PDFs"
 "$S/check_pages.py" assets/pdf/2026-05-29-resume.pdf 4
 "$S/check_pages.py" assets/pdf/2021-10-22-resume.pdf 7
@@ -70,5 +95,7 @@ out=$(PORT=4123 "$S/render.sh" "r-selftest-render" - /resume/pdf/)
 size=$(stat -f%z "$out")
 ((size >= 150000)) || { echo "FAIL: untailored render only $size bytes" >&2; exit 1; }
 "$S/cleanup.sh" "r-selftest-render"
+# Note: cleanup.sh intentionally leaves .tmp/dump-targeted-pdf/server/jekyll-*.log
+# behind (gitignored, kept for debugging) — that's expected, not a leaked artifact.
 
 echo "SELFTEST PASS"
