@@ -15,7 +15,23 @@ rm -f "$REPO_ROOT/$PAGE_REL"
 
 shopt -s nullglob
 for pidfile in "$SERVER_DIR"/jekyll-*.pid; do
-  kill "$(cat "$pidfile")" 2>/dev/null || true
+  port=$(basename "$pidfile" .pid)
+  port=${port#jekyll-}
+  pid=$(cat "$pidfile")
+  kill "$pid" 2>/dev/null || true
+  # render.sh's start_server records the real jekyll PID (via `exec`), so the
+  # kill above should already free the port. Verify and escalate rather than
+  # trust it blindly: retry a few times, then — guarded to this pidfile's own
+  # port, so we never touch an unrelated process — force-kill whatever is
+  # still listening there.
+  for _ in 1 2 3 4 5; do
+    lsof -ti ":$port" >/dev/null 2>&1 || break
+    sleep 1
+  done
+  if listeners=$(lsof -ti ":$port" 2>/dev/null) && [[ -n $listeners ]]; then
+    echo "cleanup.sh: pid $pid didn't free :$port; force-killing listener(s): $listeners" >&2
+    kill -9 $listeners 2>/dev/null || true
+  fi
   rm -f "$pidfile"
 done
 

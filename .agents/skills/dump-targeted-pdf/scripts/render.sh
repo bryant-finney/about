@@ -27,9 +27,13 @@ fresh() { # $1=port: 200 + nonce present (nonce '-' skips body check)
 }
 
 start_server() { # $1=port
-  (cd "$REPO_ROOT" && nohup bundle exec jekyll serve --port "$1" --host 127.0.0.1 \
-    >"$SERVER_DIR/jekyll-$1.log" 2>&1 &
-   echo $! >"$SERVER_DIR/jekyll-$1.pid")
+  # exec (not `&` inside the subshell) so the subshell's PID becomes nohup's,
+  # and nohup/bundle exec in turn replace themselves in place too — the PID
+  # recorded below is the real jekyll process, not a wrapper, so cleanup.sh's
+  # kill actually stops the server instead of orphaning it.
+  (cd "$REPO_ROOT" && exec nohup bundle exec jekyll serve --port "$1" --host 127.0.0.1 \
+    >"$SERVER_DIR/jekyll-$1.log" 2>&1) &
+  echo $! >"$SERVER_DIR/jekyll-$1.pid"
 }
 
 wait_fresh() { # $1=port $2=seconds
