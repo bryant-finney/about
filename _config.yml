@@ -51,6 +51,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - docs/
+  - AGENTS.md
+  - GEMINI.md
 
 collections:
   fun:
