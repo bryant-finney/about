@@ -4,7 +4,7 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 ## What This Is
 
-A personal website and blog for Bryant Finney, deployed to GitHub Pages at https://bryant-finney.github.io/about/. It doubles as a resume/portfolio site.
+A personal website and blog for Bryant Finney, deployed to GitHub Pages at <https://bryant-finney.github.io/about/>. It doubles as a resume/portfolio site.
 
 ## Build & Serve
 
@@ -48,6 +48,7 @@ The site uses `baseurl: /about`, so all local URLs are under `http://localhost:4
 **New blog post:** Create `_posts/YYYY-MM-DD-slug.md` with `categories: [tech]` or `categories: [fun]` in front matter.
 
 **New employer/role to resume:**
+
 1. Add employer entry to `_data/employers.yml`
 2. Create summary file in `_pages/summaries/<key>.md`
 3. Create role files in `_resume/<key>/` with `resume_tag` and `i_order` front matter
