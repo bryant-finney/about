@@ -7,6 +7,8 @@
 ![javascript](https://img.shields.io/badge/javascript-{{include.color}}?style={{include.badge-style}})
 ![Amazon Web Services (AWS)](https://img.shields.io/badge/Amazon_Web_Services_%28AWS%29-{{include.color}}?style={{include.badge-style}})
 ![software architecture](https://img.shields.io/badge/software_architecture-{{include.color}}?style={{include.badge-style}})
+![agentic AI](https://img.shields.io/badge/agentic_AI-{{include.color}}?style={{include.badge-style}})
+![DICOM](https://img.shields.io/badge/DICOM-{{include.color}}?style={{include.badge-style}})
 ![REST](https://img.shields.io/badge/REST-{{include.color}}?style={{include.badge-style}})
 ![graphql](https://img.shields.io/badge/graphql-{{include.color}}?style={{include.badge-style}})
 ![microservices](https://img.shields.io/badge/microservices-{{include.color}}?style={{include.badge-style}})

@@ -23,3 +23,5 @@ Responsibilities:
   decoupling build pipelines from deployment topology
 - own multi-account cost management for over eighty environments serving six product development
   teams, balancing engineering velocity with budget accountability
+- develop DICOM interoperability and performance-testing tools, including a cross-platform C-ECHO
+  service class user and a Python-based load-testing harness for DICOM service class providers

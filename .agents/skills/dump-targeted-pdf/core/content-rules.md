@@ -4,7 +4,7 @@ Reframe emphasis truthfully; never fabricate. The resume may reorder, trim, and 
 
 ## Rules
 
-- Reorder the skill badges toward the JD; add only truthful concept badges; keep the set honest — do not add skills not possessed. Known specifics: AWS **ECS**, not Kubernetes; no hands-on DICOM/HL7 claims.
+- Reorder the skill badges toward the JD; add only truthful concept badges; keep the set honest — do not add skills not possessed. Known specifics: AWS **ECS**, not Kubernetes; hands-on DICOM experience is supported by the Elucid resume sources, but no hands-on HL7 claims.
 - Reframe the summary and lead bullets toward the JD (e.g., for a backend role, foreground Python services, distributed/event-driven systems, data pipelines, AWS, regulated-healthcare experience).
 - Trim the oldest roles (IERUS/RMCI) into one compact "Earlier Experience" block to fit two pages.
 - No universal claims ("every environment", "every release") unless a source line says so.

@@ -18,3 +18,6 @@ Responsibilities:
   and architectural decision records
 - mentor engineers across teams through design reviews, pull request feedback, and pairing on
   platform-engineering tasks
+- design and execute an AI-agent-orchestrated environment teardown workflow using isolated git
+  worktrees, canary validation, and account-scoped safeguards, reducing cloud costs by roughly 30%
+  without disrupting in-flight regulated work
