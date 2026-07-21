@@ -1,6 +1,7 @@
 ---
 name: dump-targeted-pdf
-description: Generate a two-page job-targeted PDF resume from a job description. Use when the user wants a resume tailored to a specific role or JD. Takes the JD file path or URL (required), optionally a delivery directory, a filename label, and the word non-interactive (test harnesses only).
+description: Generate a two-page job-targeted PDF resume from a job description. Use when the user wants a resume tailored to a specific role or JD
+argument-hint: <source JD> [--output .] [--label <name>] [--force]
 ---
 
 # dump-targeted-pdf

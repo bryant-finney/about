@@ -26,7 +26,7 @@ prompt() { # $1=delivery dir
   cat <<EOF
 Generate a targeted resume PDF using the dump-targeted-pdf skill: read
 .agents/skills/dump-targeted-pdf/core/workflow.md and follow it end to end.
-Arguments: JD source $JD ; delivery directory $1 ; non-interactive.
+Arguments: $JD | --output $1 | --force.
 EOF
 }
 

@@ -6,10 +6,10 @@ Generate a two-page, job-targeted PDF resume for a given job description. Follow
 
 Parse the invocation arguments:
 
-- **JD source** (required): any readable local file path (`.md`, `.txt`, `.eml`, or no extension) or a URL. If absent, ask the user for it before doing anything else.
-- **Delivery directory** (optional): where the final PDF lands. Defaults to the JD file's parent directory; when the JD source is a URL or pasted text, defaults to `/tmp`.
-- **`non-interactive`** (test runs only): skips both checkpoints. In this mode an explicit delivery directory is REQUIRED and it must not be the JD file's parent — refuse to proceed otherwise. Deliver the run artifacts (`fact-check.md`, `ladder.txt`, `markers.txt`) alongside the PDF.
-- **Label** (optional): a short token for the delivered filename; defaults to `targeted`.
+- `[source-jd]` (required positional): any readable local file path (`.md`, `.txt`, `.eml`, or no extension) or a URL. If absent, ask the user for it before doing anything else.
+- `--output <delivery-dir>` (optional): where the final PDF lands. Defaults to the JD file's parent directory; when `[source-jd]` is a URL or pasted text, defaults to `/tmp`.
+- `--force` (optional, test runs only): skips both checkpoints (non-interactive mode). In this mode, `--output` is REQUIRED and must not be the JD file's parent directory — refuse to proceed otherwise. Deliver the run artifacts (`fact-check.md`, `ladder.txt`, `markers.txt`) alongside the PDF.
+- `--label <token>` (optional): a short token for the delivered filename; defaults to `targeted`.
 
 ## Hard rules (all steps)
 
