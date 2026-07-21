@@ -22,6 +22,13 @@ For every claim in the drafted content (each bullet, headline fragment, date, ti
 
 These are pre-approved compositions of source facts; verify usage matches the derivation instead of flagging them:
 
+- **Required identity and contact block:** "Bryant Finney", `finneybp@gmail.com`, "Boston, MA",
+  `https://www.linkedin.com/in/bryant-finney/`, and `https://github.com/bryant-finney` — fixed
+  fields required by the canonical skeleton in `layout-spec.md`.
+- **Tailored headline:** may combine the current `Principal Platform Engineer` title with
+  source-backed domain or skill concepts. For example, "Principal Engineer · AI-Native Scientific
+  Platforms" derives from the current title, the `agentic AI` skill and workflow, platform
+  architecture experience, and IERUS scientific-instrument software.
 - **Combined Outdoorlink entry:** "Lead / Consulting Software Engineer", 2019 February – 2022 January, "Huntsville, AL / Boston, MA" — derived from the two `employers.yml` entries `odl` (Lead Software Engineer, 2019-02 to 2020-08) + `odl-consult` (Software Engineering Consultant, 2020-08 to 2022-01). Never consultant-only.
 - **"more than 14 years"** of engineering experience — used on the public `/resume/pdf/` page.
 - **"FDA-regulated"** describing Elucid's domain — approved phrasing even though repo sources do not contain the string "FDA".

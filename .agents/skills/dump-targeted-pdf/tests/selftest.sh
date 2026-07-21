@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # selftest.sh — deterministic tests for the dump-targeted-pdf scripts.
-# Page-count/size expectations pinned 2026-07-19; re-pin the numbers below
+# Page-count/size expectations pinned 2026-07-20; re-pin the numbers below
 # if assets/pdf/ or _pages/pdf.md content changes.
 set -euo pipefail
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
@@ -91,7 +91,7 @@ rm -rf "$scratch"
 
 step "render: untailored /resume/pdf/ renders at pinned size/pages"
 out=$(PORT=4123 "$S/render.sh" "r-selftest-render" - /resume/pdf/)
-"$S/check_pages.py" "$out" 4
+"$S/check_pages.py" "$out" 5
 size=$(stat -f%z "$out")
 ((size >= 150000)) || { echo "FAIL: untailored render only $size bytes" >&2; exit 1; }
 "$S/cleanup.sh" "r-selftest-render"
