@@ -63,8 +63,8 @@ for name in claude codex gemini; do
     echo "$name: FAIL fact-check artifact contains FAIL rows"; ok=0
   fi
   [[ -f $dir/ladder.txt ]] || { echo "$name: FAIL missing ladder.txt"; ok=0; }
-  if [[ -f $dir/ladder.txt ]] && grep -q '^4 ' "$dir/ladder.txt"; then
-    echo "$name: WARN content cuts were needed (ladder step 4) — review required"
+  if [[ -f $dir/ladder.txt ]] && grep -q '^7 ' "$dir/ladder.txt"; then
+    echo "$name: WARN content cuts were needed (ladder step 7) — review required"
   fi
   [[ -f $dir/markers.txt ]] || { echo "$name: FAIL missing markers.txt"; ok=0; }
   if [[ -f $dir/markers.txt ]] && grep -qi 'missing' "$dir/markers.txt"; then

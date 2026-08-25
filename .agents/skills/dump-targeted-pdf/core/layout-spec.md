@@ -95,16 +95,20 @@ Verify against the served page HTML (`curl` the page URL, `grep -F` each string)
 
 Before applying any ladder step, check that Earlier Experience/Education rows use `<h3>`/`<h4>`/`<h5>` per the Section rules above and that the global header-size shrink step is available to scale them down.
 
-When the render is not exactly 2 pages, append the next step (one line) inside the page's `@media print` block and re-render. Each of steps 1–4 may be applied at most once, at exactly these values. A run that reaches step 5 must be flagged for human review — record it in the ladder log.
+When the render is not exactly 2 pages, append the next step (one line) inside the page's `@media print` block and re-render. Each of steps 1–6 may be applied at most once, at exactly these values. A run that reaches step 7 must be flagged for human review — record it in the ladder log.
 
 1. `@page { margin: 0.4in 0.5in; }`
 2. `body { font-size: 0.92em; line-height: 1.28; }`
 3. `h1, h2, h3, h4, table.tsum tr td h3, table.tsum tr td h4 { font-size: 0.92em; line-height: 1.2; }`
 4. `.skill-badges img { zoom: 0.95; }`
-5. Content cuts by judgment: trim oldest roles first, then reduce bullets per employer (respect `content-rules.md`).
+5. `#footer, .page__footer, .page__share { display: none !important; }`
+6. `hr { margin: 0.25rem 0 !important; }`
+7. Content cuts by judgment: trim oldest roles first, then reduce bullets per employer (respect `content-rules.md`).
+
+Steps 5 and 6 remove no visible content — always exhaust them before cutting anything. `pdf.scss` hides `.btn`, `.img.logo`, and `.page__meta` in print but **not** the theme's `#footer` / `.page__footer`, which occupies height while rendering no ink; step 6 overrides `pdf.scss`'s `hr { margin: 0.45rem 0 }` across the page's ~6 rules. The tell that step 5 is the fix: the last page is entirely empty — `pdftoppm` renders a blank sheet and `pdftotext -f <last> -l <last> <pdf> -` emits only a form feed. That means the overflow is invisible chrome, not content, and no amount of content cutting is the right response.
 
 Note: `pdf.scss` chains `page-break-after: avoid` across `h1`–`h4`, `table.tsum`, and `hr`, so heading + table + paragraph form one unbreakable block — shrink globally; do not fight page-break rules per-block. If the render is _under_ 2 pages, remove ladder steps or restore trimmed content instead.
 
 ## Ladder log
 
-Record every ladder step applied (or `none`) in `ladder.txt` inside the run workspace, one line per step, e.g. `1 margins`, `5 content-cuts FLAG-FOR-REVIEW`.
+Record every ladder step applied (or `none`) in `ladder.txt` inside the run workspace, one line per step, e.g. `1 margins`, `5 hide-chrome`, `7 content-cuts FLAG-FOR-REVIEW`.
