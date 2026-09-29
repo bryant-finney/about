@@ -15,6 +15,7 @@ i_order: 38
     and synchronous domain analyses
   - Developed a high-level framework in C incorporated with the
     [Yocto project](https://www.yoctoproject.org/) for handling onboard processing
+    - Integrated the framework with the system's embedded Linux kernel and OS, built from Yocto recipes; an early XRDS prototype was based on a BeagleBone single-board computer
     - Designed and integrated communication functions with an embedded
       [SQLite](https://www.sqlite.org/index.html) database for retrieving algorithm
       parameters, as well as loading and storing both raw and processed data

@@ -9,7 +9,7 @@ resume_tag: uah-ra
 - Designed a mechanism for releasing non-lethal grenades from multirotor UAVs to
   assist SWAT teams
 - Built, repaired, and maintained quadrocopter and hexacopter UAVs as part of a
-  team. Used SolidEdge to design replacement parts, and integrated imaging
+  team. Used SolidEdge and 3D printing to produce replacement parts, and integrated imaging
   payloads with existing systems
 - Wrote code for the Evr2est project, which is a system that processes and
   disseminates imagery from satellites or aircraft for government use in first

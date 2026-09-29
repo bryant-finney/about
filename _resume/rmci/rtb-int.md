@@ -27,3 +27,4 @@ i_order: 30
   - Assisted with aircraft installation and testing on the airframes `OH-58C` and
     `OH-6A` of the entire embedded system in aspects of vibration data collections and
     rotor track height data collections
+  - Performed hardware-in-the-loop testing of the rotor blade tracking subsystem

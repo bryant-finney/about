@@ -3,4 +3,4 @@ platform from a legacy SOAP service to a modern [Django](https://www.djangoproje
 API, and from on-premise servers to an [AWS](https://aws.amazon.com/) cloud deployment. I
 established the team's CI/CD pipelines, containerized workloads with
 [Docker](https://www.docker.com/why-docker), and added error monitoring and database tuning to
-improve reliability and developer feedback cycles.
+improve reliability and developer feedback cycles. I also partnered with electrical engineering to package MCU firmware and orchestrate over-the-air upgrades across the company's cellular IoT device fleet.
