@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: Hello, Elucid!
 date: 2023-10-30
 categories:
