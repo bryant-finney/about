@@ -20,7 +20,7 @@ infrastructure components and services.
 - Maintained and enhanced GitLab CI/CD pipelines for application deployment and updates
 - Implemented GitLab CI/CD pipelines for consistent deployments of Terraform-managed
   resources
-- Used Terraform to enhance cloud security through high-precession security group
+- Used Terraform to enhance cloud security through high-precision security group
   and networking configurations
 - Developed new deployment strategies to minimize infrastructure costs and downtime
   while improving scalability
