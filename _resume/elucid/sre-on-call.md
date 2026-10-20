@@ -10,8 +10,7 @@ Responsibilities:
 
 - establish the company's on-call program, defining service-level indicators and objectives,
   runbook standards, and a blameless postmortem culture
-- implement Slack-integrated alerting tooling to streamline incident triage and reduce
-  time-to-acknowledge
+- develop a TypeScript [Slack](https://api.slack.com/automation) app on the [Deno Slack SDK](https://api.slack.com/automation/deno) that pages the on-call engineer via [Datadog On-Call](https://docs.datadoghq.com/service_management/on-call/) for each post in a dedicated support channel, attaching the message text and permalink and reacting with 💬 as feedback — giving Slack-only internal analysts a compliant escalation path where regulatory constraints ruled out paging through Slack directly
 - design observability dashboards spanning deployment pipeline health, environment version
   tracking, and infrastructure performance
 - lead adoption of
