@@ -1,5 +1,8 @@
 ![docker](https://img.shields.io/badge/docker-{{include.color}}?style={{include.badge-style}})
 ![python](https://img.shields.io/badge/python-{{include.color}}?style={{include.badge-style}})
+![boto3](https://img.shields.io/badge/boto3-{{include.color}}?style={{include.badge-style}})
+![typer](https://img.shields.io/badge/typer-{{include.color}}?style={{include.badge-style}})
+![pytest](https://img.shields.io/badge/pytest-{{include.color}}?style={{include.badge-style}})
 ![terraform](https://img.shields.io/badge/terraform-{{include.color}}?style={{include.badge-style}})
 ![java](https://img.shields.io/badge/java-{{include.color}}?style={{include.badge-style}})
 ![C](https://img.shields.io/badge/c-{{include.color}}?style={{include.badge-style}})
